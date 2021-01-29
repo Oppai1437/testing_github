@@ -1,0 +1,72 @@
+SELECT * FROM 'table name' WHERE id = 1; // id > 1 // id >=1
+
+CREATE DATABASE name;
+
+SHOW DATABASES;
+
+CREATE TABLE table name ( 
+id INT() UNSIGNED AUTO_INCREASEMENT PRIMARY KEY,
+testing_name VARCHAR() NOT NULL,
+testing_email VARCHAR() NOT NULL,
+date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+
+INSERT INTO 'user' ('id', 'name', 'email') VALUES (10, 'testuser', 'testemail@email');
+
+ALTER TABLE 'user' CHANGE COLUMN 'digit' 'price' char() NOT NULL;
+
+ALTER TABLE 'user' ADD COLUMN 'testingcolumn' char();
+
+ALTER TABLE 'user' DROP COLUMN 'testingcolumn';
+
+RENAME TABLE 'testing' TO 'testingupdate';
+
+DROP TABLE testingupdate;
+
+SELECT * FROM 'user';
+
+SELECT name, email FROM 'user';
+
+SELECT * FROM 'user' WHERE id IN (1,3,4);// NOT IN (1,3,4);
+
+SELECT COUNT(*) FROM user;
+
+SELEC DISTINCT 'name' FROM 'user' 
+
+SELECT MIN('price') FROM users;
+
+SELECT MAX('price') FROM users;
+
+SELECT SUM('price') FROM users;
+
+SELECT AVG('price') FROM users;
+
+SELECT * FROM users LIMIT 2;
+
+SELECT * FROM users LIMIT 4,2;
+
+SELECT * FROM users ORDER BY id DESC;
+
+SELECT * FROM users ORDER BY id ASC;
+
+SELECT * FROM users WHERE name LIKE '%hla%';
+
+SELECT * FROM users
+INNER JOIN class
+ON users.id = class.user_id
+
+SELECT * FROM users
+LEFT JOIN class
+ON users.id = class.user_id
+
+SELECT * FROM users
+RIGHT JOIN class
+ON users.id = class.user_id
+
+SELECT * FROM users
+LEFT JOIN class
+ON users.id = class.user_id
+UNION
+SELECT * FROM users
+RIGHT JOIN class
+ON users.id = class.user_id
