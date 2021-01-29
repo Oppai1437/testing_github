@@ -1,0 +1,30 @@
+ls     =    folder htl ka items twy ko kyi
+ls -la =    details pr kyi
+ls --help = documentation
+pwd    = current working dir
+touch  = new file
+mkdir  = new folder
+mv    = file move
+cp = copy
+rm = delete file
+rm -r = delete folder
+clear = clear cli
+vim = 
+i   = yay chin yin "i" ko thone
+wq/x = write quit (shift + : ko ayin yay) 
+cat = file yae content ko kyi
+head = nout sone apine ko pya
+tail -f = amyal pyaung nay tae file ko check lote
+d rwx(user atwt)  r-x(group atwt) r-x(other user atwt)
+folder directory ma hote yin "-" nae paw ml
+
+0= no permission
+1= x (can execute)
+2= w (can write) 
+3= 1+2 (wx)
+4= r(can read)
+5= 1+4(rx)
+6= 2+4(rw)
+7= 4+2+1(rwx)
+
+sudo chmod -R 777----> permission change
